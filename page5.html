@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Галлерея</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="body" vlink="black">
+
+
+<nav>
+	<div class="pages">
+    
+  
+	<div class="nav"> 
+       <a href="index.html">Главная</a>
+	</div>
+	<div class="nav"> 
+       <a href="page2.html">О себе</a>
+	</div>
+	
+	<div class="nav"> 
+       <a href="page3.php">Авторизация</a>   
+	</div>
+	
+	<div class="nav"> 
+       <a href="page4.html">Игра</a>   
+	</div>
+
+	<div class="here nav">
+		Галлерея
+	</div>
+    
+    </div>
+</nav>
+ 
+
+
+<section>
+	<div class="section">
+       
+
+<style>
+    .line {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .gallery {
+        background-color: gray;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+    }
+    .block {
+        width: 200px;
+        height: 200px;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }    
+    
+    .big-block {
+        width: 400px;
+        height: 400px;
+    }
+</style>
+
+<div class="wrapper">
+    <div id="gallery" class="gallery">
+        <div class="line">
+            <div class="pic"><img src="img\124.jpg" ></div>
+            <div class="pic"><img src="img\124.jpg" ></div>
+            <div class="pic"><img src="img\124.jpg" ></div>
+            <div class="pic"><img src="img\124.jpg" ></div>
+        </div>
+        <div id="presentation" class="center"></div>
+        <div class="line">
+            <div class="pic"><img src="img\124.jpg" ></div>
+            <div class="pic"><img src="img\124.jpg" ></div>
+            <div class="pic"><img src="img\124.jpg" ></div>
+            <div class="pic"><img src="img\124.jpg" ></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let gallery = document.getElementById("gallery");
+    gallery.onclick = function(event) {
+        let target = event.target;
+        if (target.classList.contains('block')) {
+            printSquare(window.getComputedStyle(target).backgroundColor);
+        }
+    }
+
+    function printSquare(color) {
+        let div = document.createElement("div");
+        div.className += "big-block";
+        div.style.backgroundColor = color;
+        let place = document.getElementById("presentation");
+        place.innerHTML = "";
+        place.append(div);
+    }
+</script>
+
+
+
+    </div>
+
+
+
+
+</section>
+
+
+
+
+
+</body>
+
+
+
+</html>

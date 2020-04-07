@@ -1,0 +1,51 @@
+body{
+	background: #000;
+}
+.pages{
+color: black;
+text-align: center;
+border: 2px black solid;
+width: 600px;
+height: 50px;
+margin: auto;
+display:flex;
+background: gray;
+}
+.nav{
+margin: auto;
+}
+.here{
+	color: red;
+}
+
+.header{
+width: 600px;
+height: 50px;
+margin: auto;
+text-align: center;
+}
+.section{
+   height: 850px;
+   width: 1000px;
+   border: 2px black solid;
+   text-align: center;
+   margin: auto;
+   background: gray ;
+   padding-height: 20px;
+   color: white;	 
+   }
+a{
+	text-decoration: none;
+}
+
+h1{
+	color: red;
+
+}
+
+.pic{
+	text-align:center;
+	height: 500px;
+    width: 500px;
+    
+}
