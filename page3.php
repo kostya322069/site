@@ -38,17 +38,17 @@
 <section>
 	<div class="section">
        
-       <form>
-       <div class="regestration"><form action="" method="post" name="registerform"> 
+       <form action="" method="" enctype="multipart/form-data"> 
+       <div class="regestration">
        <h1>Вход</h1><br>
        <p><label>Введите логин:</p><br>
-       <input name="login" size="20" type="text"></label></p><br>
+       <input name="nickname" size="20" type="text" placeholder="Введите логин"></label></p><br>
        <p><label>Введите пароль:</p><br>
-       <input name="password" size="20" type="password"></label></p><br>
-       <p><input name="ok" type= "submit" value="login"></p><br>
+       <input name="parol" size="20" type="password" placeholder="Введите пароль"></label></p><br>
+       <p><input name="login" type= "submit" value="login"></p><br>
        </form>
        <p>Еще не зарегистрирован?</p><br>
-       <a href=regpage.html> Зарегистрируйся </a><br>
+       <a href=regpage.php> Зарегистрируйся </a><br>
        </div>
       </form>
 

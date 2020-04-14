@@ -37,18 +37,19 @@
 	<div class="section">
        
        <h1>Регистриция</h1><br>
-    
+      <form action="signup.php" method="post" enctype="multipart/form-data">
+
       <p><label>Введите Имя:</p><br>
-       <input name="name" size="20" type="text"></label></p><br>
+       <input name="full_name" size="20" type="text"></label></p><br>
     
       <p><label>Введите логин:</p><br>
        <input name="login" size="20" type="text"></label></p><br>
     
       <p><label>Введите пароль:</p><br>
-      <input name="parol" size="20" type="password"></label></p><br>
+      <input name="password" size="20" type="password"></label></p><br>
 
       <p><label>Повторите пароль:</p><br>
-      <input name="parol1" size="20" type="password"></label></p><br>
+      <input name="password_confirm" size="20" type="password"></label></p><br>
 
     
      
@@ -57,9 +58,13 @@
     
        </form>
       <p>Уже зарегистрирован?</p><br>
-     <a href=page3.html> Вход на сайт </a><br>
+      <p class="message">
+     <a href=page3.php> Вход на сайт </a><br>
      <a href="index.html"><br> Вернуться на главную страницу </a>
      <br>
+     <p class="message">
+        <?= $_SESSION['message'] ?>
+     </p> 
     </div>
 
 
